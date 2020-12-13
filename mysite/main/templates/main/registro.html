@@ -1,0 +1,14 @@
+{% extends "main/principal.html" %}
+{% block content %}
+
+<form class="container" action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn waves-effect waveslight" type="submit" name="action">Registrar!
+        <i class="material-icons right">send</i>
+    </button>
+</form>
+<br>
+Si ya tienes una cuenta, ve a <a href="/login">Entrar</a>
+
+{% endblock %}
