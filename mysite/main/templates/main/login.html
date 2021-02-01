@@ -1,7 +1,7 @@
 {% extends "main/principal.html" %}
 {% block content %}
 
-<form action="" method="POST">
+<form class="container" action="" method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <button class="btn waves-effect waveslight" type="submit" name="action">Entrar!

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Curso
-from tinymce.widgets import TinyMCE
+from tinymce.widgets import TinyMCE # django-tinymce4-lite
 from django.db import models
 # Register your models here.
 
